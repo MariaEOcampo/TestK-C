@@ -1,0 +1,38 @@
+@import '../../styles/variables';
+
+div{
+    display: flex;
+    align-items: center;
+}
+
+
+.accepted{
+    color: $green;
+    margin-right: 5px;
+}
+
+.accepted-text{
+font-family: $primary-font;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;  
+color: $green;
+padding-top: 6px;
+}
+
+.declined{
+    color: $red;
+    margin-right: 5px;
+}
+
+.declined-text{
+font-family: $primary-font;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;  
+color: $red;
+margin-top: 10px;
+padding-top: 6px;
+}

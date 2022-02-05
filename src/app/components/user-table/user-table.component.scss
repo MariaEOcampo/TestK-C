@@ -1,0 +1,16 @@
+@import '../../styles/variables';
+
+table {
+  width: 936px;
+  margin-left: 24px;
+}
+
+.mat-elevation-z8{
+    cursor: pointer;
+}
+
+.tr-hover{
+    &:hover{
+        background-color: $hover-color;
+    }
+}

@@ -1,0 +1,29 @@
+@import '../../styles/variables';
+
+h3{
+    margin:16px!important;
+    padding: 16px;
+    font-family: $primary-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: $secondary-gray!important;
+}
+
+.mat-tab-group{
+    margin: 16px;
+}
+
+.mat-elevation-z4{
+position: static;
+width: 800px;
+min-height: 248px;
+left: 16px;
+top: 111px;
+font-family:  $primary-font;;
+font-style: normal;
+font-size: 16px;
+line-height: 24px;
+box-shadow: none;
+}

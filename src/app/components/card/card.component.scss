@@ -1,0 +1,42 @@
+@import '../../styles/variables';
+
+.example-card{
+  height: 204px;
+width: 456px;
+left: 0px;
+top: 0px;
+border-radius: 4px;
+margin: 12px;
+}
+
+.arrow{
+    color:$primary-blue; 
+    width: 16px;
+}
+
+.mat-button{
+    font-family: $primary-font;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 16px;
+letter-spacing: 0px;
+text-align: left;
+color: $primary-blue;
+
+}
+
+.mat-card-content { 
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.mat-card-title{
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.mat-card-actions{
+    padding-left: 16px;
+    padding-right: 24px;
+}

@@ -1,0 +1,41 @@
+<div class="container">
+  <mat-divider vertical style="height: 140vh; width: 167px; margin-left: 76px; "></mat-divider>
+  <div class="container__menuItems">
+    <ul *ngFor="let item of menuItems">
+      <li [ngClass]="item.status ? 'active' : ''">{{ item.name }}</li>
+    </ul>
+  </div>
+  <mat-divider vertical style="height: 140vh; width: 167px"></mat-divider>
+  <div>
+    <h1>Welcome Home</h1>
+    <h2>Frequent Asked Questions</h2>
+     <div *ngFor="let question of questions">
+       <div class="container__tabs" >
+         <app-expansion-container [titleTab]="question.name" [contentTab]="question.content" ></app-expansion-container>
+       </div>
+     </div>
+     <div>
+       <div class="container__buttons">
+         <h2>Table</h2>
+         <div class="container__filter">
+           <div>
+             <p>Status filter: </p>
+           </div>
+           <div class="container__filter-btn">
+             <button mat-raised-button (click)="filterByTrue()" *ngIf="activeBtn" class="acceptedActive" >Accepted <mat-icon class="filterIcon">cancel</mat-icon></button>
+              <button mat-raised-button (click)="filterByTrue()" *ngIf="!activeBtn" >Accepted</button>
+             <button mat-raised-button (click)="filterByFalse()" *ngIf="declineBtn" class="acceptedActive">Declined <mat-icon class="filterIcon">cancel</mat-icon></button>
+              <button mat-raised-button (click)="filterByFalse()" *ngIf="!declineBtn">Declined</button>
+           </div>
+         </div>
+      </div>
+       <app-user-table [tableData]="tableData" [tableDeclined]="tableDeclined" [tableAccepted]="tableAccepted" ></app-user-table>
+     </div>
+     <h2>Explore similar cards</h2>
+     <div class="container__cards" *ngIf="InfoCard">
+       <div *ngFor="let card of InfoCard">
+         <app-card [title]="card.title" [content]="card.content"></app-card>
+       </div>
+     </div>
+  </div>
+</div>

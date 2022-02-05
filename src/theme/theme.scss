@@ -1,0 +1,18 @@
+@use '@angular/material' as mat;
+
+$my-primary: #006281, 500;
+$my-accent: #0C6904,900;
+
+// The "warn" palette is optional and defaults to red if not specified.
+$my-warn: #B42020,900;
+
+/* $my-theme: mat.define-light-theme((
+ color: (
+   primary: $my-primary,
+   accent: $my-accent,
+   warn: $my-warn,
+ )
+)); */
+
+
+$my-theme: mat.define-light-theme(my-primary,$my-accent,$my-warn);

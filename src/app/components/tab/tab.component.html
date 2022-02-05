@@ -1,0 +1,8 @@
+
+<mat-tab-group dynamicHeight animationDuration="0ms" >
+  <mat-tab *ngFor="let item of contentTab"  [label]=item.element>
+    <div class="mat-elevation-z4">
+      {{item.textContent}}
+    </div>
+  </mat-tab>
+</mat-tab-group>

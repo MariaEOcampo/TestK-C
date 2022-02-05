@@ -1,0 +1,15 @@
+<mat-accordion>
+  <mat-expansion-panel hideToggle>
+
+    <p>This is the primary content of the panel.</p>
+  </mat-expansion-panel>
+  <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-description>
+        {{titleTab}}
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+   <app-tab [titleTab]="titleTab" [contentTab]="contentTab" [labelTabs]="labelTabs" ></app-tab>
+  </mat-expansion-panel>
+</mat-accordion>
